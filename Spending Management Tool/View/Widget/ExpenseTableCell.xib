@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExpenseCell" rowHeight="86" id="KGk-i7-Jjw" customClass="ExpenseTableCell" customModule="Spending_Management_Tool" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="535" height="86"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="535" height="86"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="grR-26-e89">
+                        <rect key="frame" x="5" y="5" width="525" height="76"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20000.0 LKR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRz-Fk-yd0">
+                                <rect key="frame" x="392.5" y="26" width="124.5" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="lGk-zO-wa6">
+                                <rect key="frame" x="88" y="9" width="131.5" height="58.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOTE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZN0-Uf-1Jb">
+                                        <rect key="frame" x="0.0" y="0.0" width="48.5" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily 3rd eac day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jca-sn-wCk">
+                                        <rect key="frame" x="0.0" y="22.5" width="131.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reminder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lef-We-QKb">
+                                        <rect key="frame" x="0.0" y="44" width="55.5" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                        <color key="textColor" systemColor="systemIndigoColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4LW-jm-HXC" customClass="CustomMiniProgressBar" customModule="Spending_Management_Tool" customModuleProvider="target">
+                                <rect key="frame" x="8" y="2" width="55" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="FYt-7D-Ojr"/>
+                                    <constraint firstAttribute="height" constant="65" id="gkD-Q1-AGx"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" name="AccentColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="speed">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PRz-Fk-yd0" firstAttribute="top" secondItem="grR-26-e89" secondAttribute="top" constant="26" id="2xC-P1-NZ8"/>
+                            <constraint firstAttribute="bottom" secondItem="4LW-jm-HXC" secondAttribute="bottom" id="8g1-ss-VNk"/>
+                            <constraint firstItem="lGk-zO-wa6" firstAttribute="leading" secondItem="4LW-jm-HXC" secondAttribute="trailing" constant="15" id="ClH-Ci-Hlj"/>
+                            <constraint firstItem="4LW-jm-HXC" firstAttribute="top" secondItem="grR-26-e89" secondAttribute="top" id="DJA-ee-awK"/>
+                            <constraint firstAttribute="trailing" secondItem="PRz-Fk-yd0" secondAttribute="trailing" constant="8" id="VKv-GO-jVg"/>
+                            <constraint firstItem="4LW-jm-HXC" firstAttribute="leading" secondItem="grR-26-e89" secondAttribute="leading" constant="8" id="XFa-Aj-hHr"/>
+                            <constraint firstItem="lGk-zO-wa6" firstAttribute="centerY" secondItem="grR-26-e89" secondAttribute="centerY" id="h0D-mh-lpX"/>
+                            <constraint firstItem="PRz-Fk-yd0" firstAttribute="centerY" secondItem="grR-26-e89" secondAttribute="centerY" id="zcF-hw-z7t"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="grR-26-e89" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="NCX-fo-ctG"/>
+                    <constraint firstAttribute="trailing" secondItem="grR-26-e89" secondAttribute="trailing" constant="5" id="QRJ-pE-mQw"/>
+                    <constraint firstAttribute="bottom" secondItem="grR-26-e89" secondAttribute="bottom" constant="5" id="Vav-9T-eDq"/>
+                    <constraint firstItem="grR-26-e89" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="yIX-gS-XB9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="amount" destination="PRz-Fk-yd0" id="nAD-L1-r7m"/>
+                <outlet property="circleProgressView" destination="4LW-jm-HXC" id="NTL-lR-7V4"/>
+                <outlet property="dueDateLabel" destination="jca-sn-wCk" id="EnG-v9-z95"/>
+                <outlet property="noteLabel" destination="ZN0-Uf-1Jb" id="eJN-Ca-xgn"/>
+                <outlet property="reminderLabel" destination="lef-We-QKb" id="yc9-e0-ehx"/>
+            </connections>
+            <point key="canvasLocation" x="116.66666666666667" y="77.008928571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

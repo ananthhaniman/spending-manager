@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CategoryTabelCell" id="KGk-i7-Jjw" customClass="CategoryTableCell" customModule="Spending_Management_Tool" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="358" height="93"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="358" height="93"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HA1-b7-v2v">
+                        <rect key="frame" x="10" y="10" width="338" height="73"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="2qm-cg-QPU">
+                                <rect key="frame" x="10" y="0.0" width="318" height="73"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b7H-vm-urv">
+                                        <rect key="frame" x="0.0" y="0.0" width="119" height="73"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="House" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkr-8o-XpV">
+                                                <rect key="frame" x="0.0" y="0.0" width="46" height="44.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="House billing notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UW0-n9-3Vz">
+                                                <rect key="frame" x="0.0" y="28.5" width="119" height="44.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                                <color key="textColor" systemColor="systemGray5Color"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="122030.00 LKR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWe-Qh-pai">
+                                        <rect key="frame" x="205.5" y="0.0" width="112.5" height="73"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="2qm-cg-QPU" firstAttribute="top" secondItem="HA1-b7-v2v" secondAttribute="top" id="1pF-Zy-5IC"/>
+                            <constraint firstAttribute="bottom" secondItem="2qm-cg-QPU" secondAttribute="bottom" id="DpJ-Ds-qiY"/>
+                            <constraint firstItem="2qm-cg-QPU" firstAttribute="leading" secondItem="HA1-b7-v2v" secondAttribute="leading" constant="10" id="QuU-Ue-cA1"/>
+                            <constraint firstAttribute="trailing" secondItem="2qm-cg-QPU" secondAttribute="trailing" constant="10" id="Wnj-Hp-hog"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HA1-b7-v2v" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="b32-l8-vXG"/>
+                    <constraint firstItem="HA1-b7-v2v" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="c59-Dw-XGK"/>
+                    <constraint firstAttribute="bottom" secondItem="HA1-b7-v2v" secondAttribute="bottom" constant="10" id="ntc-1x-LOF"/>
+                    <constraint firstAttribute="trailing" secondItem="HA1-b7-v2v" secondAttribute="trailing" constant="10" id="pdf-Pm-ei6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="budget" destination="fWe-Qh-pai" id="3gx-LJ-XPm"/>
+                <outlet property="cellbox" destination="HA1-b7-v2v" id="L9w-CB-rfW"/>
+                <outlet property="note" destination="UW0-n9-3Vz" id="qJx-Mc-QIk"/>
+                <outlet property="title" destination="pkr-8o-XpV" id="LAS-tw-nhe"/>
+            </connections>
+            <point key="canvasLocation" x="123.18840579710145" y="106.80803571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
